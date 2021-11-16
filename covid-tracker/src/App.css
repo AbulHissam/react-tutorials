@@ -1,0 +1,40 @@
+.app__left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.app__header,
+.app__infobox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__infobox {
+  gap: 10px;
+}
+.infobox {
+  flex-grow: 1;
+}
+.linechart {
+  height: 450px;
+}
+.graph-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .app__infobox {
+    flex-direction: column;
+  }
+  .linechart {
+    height: 300px;
+    padding: 0.5rem;
+  }
+  .infobox {
+    width: 100%;
+  }
+  .gap {
+    gap: 0.5rem;
+  }
+}
